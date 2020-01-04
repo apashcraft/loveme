@@ -130,6 +130,10 @@ footer ul {
 	padding: 0;
 }
 
+footer ul li {
+	display: inline-block;
+}
+
 a.social {
 	display: inline-block;
 	text-indent: -9999px;
