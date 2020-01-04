@@ -1,9 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-	<div>
-		<h1>Adam Ashcraft</h1>
-		<p>Hello, my name is Adam Ashcraft.</p>
-	</div>
+	<main class="flex">
+		<div class="card">
+			<h2>Background</h2>
+			<p>I am a Systems Administrator, Pythonista, and aspiring Engineer constantly striving to build the things I don't yet know how to build. I use my natural tech savvy and former military experience to develop new skills quickly.</p>
+			<p>I see every problem as a solution waiting to to be crafted.</p>
+		</div>
+
+		<div class="card">
+			<h2>Technologies</h2>
+			<p>I see engineering as independent from single technologies, but my skillset includes:</p>
+			<ul class="skills">
+				<li>Python</li>
+				<li>Flask</li>
+				<li>MongoDB</li>
+				<li>Windows and Linux OS Administration</li>
+				<li>Data management through APIs</li>
+			</ul>
+		</div>
+	</main>
 {% endblock %}
 

@@ -7,15 +7,21 @@
 		{% else %}
 		<title>Adam Ashcraft</title>
 		{% endif %}
+		<meta name="viewport" content="width=device-width, initial-scale=1.0'"> 
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div>
-			<a href="{{ url_for('main.index') }}">Home</a>
+		<div class="main-nav">
+			<ul class="nav">
+				<li class="name">Adam Ashcraft</li>
+				<li><a href="{{ url_for('main.index') }}">Home</a></li>
+			</ul>
 		</div>
 		<header>
 			<img src="{{ url_for('static', filename='images/spaceman_spiff.jpg')}}" alt="Spaceman Spiff" class="profile-image">
-			<h1 class="tag name">Hello, my name is Adam Ashcraft.</h1>
+			<h1 class="tag name">Adam Ashcraft.</h1>
+			<p class="tag title">Systems Administrator</p>
 		</header>
 		<hr>
 		{% with messages = get_flashed_messages() %}
@@ -28,5 +34,11 @@
 		{% endif %}
 		{% endwith %}
 		{% block content %}{% endblock %}
+		<footer>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/adamashcraft/" class="social linkedin">LinkedIn</a></li>
+				<li><a href="https://github.com/apashcraft" class="social github">Github</a></li>
+			</ul>
+			<p class="copyright">Copyright 2019, Adam Ashcraft</p>
 	</body>
 </html>
