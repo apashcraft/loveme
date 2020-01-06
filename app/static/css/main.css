@@ -63,11 +63,11 @@ header .profile-image {
 	border: 3px solid white;
 	transition: all .5s;
 }
-header .profile-image: hover {
+header .profile-image:hover {
 	transform: scale(1.2) rotate(360deg);
 }
 .tag {
-	background-color: #efefef;
+	background-color: #c5c7c4;
 	color: black;
 	padding: 10px;
 	border-radius: 5px;
@@ -81,17 +81,24 @@ header .profile-image: hover {
 }
 
 .card {
-	margin: 30px;
+	margin: 40px;
 	padding: 20px 40px 40px;
-	max-width: 500px;
+	max-width: 800px;
 	text-align: left;
-	background: #f7f5f0;
+	background: #c5c7c4;
 	border-bottom: 4px solid #ccc;
-	border-radius: 6px;
+	border-radius: 10px;
 }
 
 .card:hover {
 	border-color: #83bfa1;
+}
+
+.card-title {
+	text-align: center;
+	border: solid black 3px;
+	border-radius: 10px;
+	padding: 10px;
 }
 
 ul.skills {
