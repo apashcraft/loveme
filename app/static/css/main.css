@@ -75,10 +75,11 @@ a:hover {
 }
 .main-header {
 	text-align: center;
-	background: url("../images/milky_way.jpg") no-repeat top center;
+	background: url("../images/banner.jpg") no-repeat top center;
 	background-size: cover;
 	overflow: hidden;
 	padding-top: 60px;
+
 }
 .main-header {
 	line-height: 1.5;
@@ -147,25 +148,25 @@ ul.skills {
 	background: #0399ff;
 }
 
-footer {
+.main-footer {
 	width: 100%;
 	min-height: 30px;
 	padding: 20px 0 40px 20px;
 }
 
-footer .copyright {
+.main-footer .copyright {
 	top: -8px;
 	margin-right: 20px;
 	font-size: .75em;
 }
 
-footer ul {
+.main-footer ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-footer ul li {
+.main-footer ul li {
 	display: inline-block;
 }
 
@@ -223,7 +224,7 @@ a.social:hover {
 		line-height: 1.6em;
 	}
 
-	footer {
+	.main-footer {
 		font-size: 1.3em;
 		max-width: 1200px;
 		margin: 40px auto;
