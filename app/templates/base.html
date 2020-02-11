@@ -10,6 +10,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0'"> 
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed|Ubuntu+Mono&display=swap" rel="stylesheet">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.52.0/mapbox-gl.js"></script>
+    	<link href="//cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.52.0/mapbox-gl.css" rel="stylesheet" />
+		<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 	</head>
 	<body>
 		<div class="main-nav">
@@ -19,7 +22,7 @@
 				<div class="dropdown">
 					<li><a href="#">Projects</a></li>
 						<div class="dropdown-content">
-							<a href="#">Link 1</a>
+							<a href="{{ url_for('main.nhd_map') }}">NHD Kenty Co, Delaware</a>
 							<a href="#">Link 2</a>
 							<a href="#">Link 3</a>
 						</div>
